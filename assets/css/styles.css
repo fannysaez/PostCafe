@@ -14,7 +14,12 @@
   width: 100%;
   height: 150px;
 }
-
+html, body {
+    height: 100%;
+}
+.main-content {
+    flex: 1;
+}
 body {
     font-family: "Lora Regular", sans-serif;
 }
