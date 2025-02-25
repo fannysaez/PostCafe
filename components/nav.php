@@ -1,7 +1,7 @@
 <header>
   <nav id="navbar-example2" class="navbar navbar-expand-lg px-2" style="background-color: #6F4E37;">
     <div class="container">
-      <a class="navbar-brand text-white" href="/index.php">PostCafé</a>
+      <a class="navbar-brand text-white" href="/index.php"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -14,7 +14,7 @@
             <a class="nav-link text-white" href="/article.php">Articles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Formulaire</a>
+            <a class="nav-link text-white" href="/article-create.php">Formulaire</a>
           </li>
         </ul>
       </div>
