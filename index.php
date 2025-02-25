@@ -2,7 +2,7 @@
 
 
 <main>
-    <h1>Bienvenue</h1>
+<h1 class="text-center my-5">Bienvenue sur PostCafé</h1>
 </main>
 
 
