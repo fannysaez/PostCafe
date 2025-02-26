@@ -35,7 +35,11 @@ h1 {
 /* Boutons */
 
 
-
+/* Caroussel */
+.carousel-item img {
+    height: 500px; 
+    object-fit: cover; 
+}
 /* articles */
 .articles-content {
     display: grid;

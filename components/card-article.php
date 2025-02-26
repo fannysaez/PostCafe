@@ -13,7 +13,7 @@
 
 <div class="container-fluid py-2 mb-5">
     <div class="row justify-content-center">
-        <div class="col-md-3  justify-content-center">
+        <div class="col-md-3 justify-content-center">
             <div class="card">
                 <img src="" class="card-img-top" alt="Article Image">
                 <div class="card-body d-flex flex-column gap-4">

@@ -1,3 +1,4 @@
+
 <?php include 'components/header.php'; ?>
 
 <h1>article</h1>
