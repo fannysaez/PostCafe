@@ -7,21 +7,21 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="image1.jpg" class="d-block w-100" alt="Image 1">
+      <img src="/assets/img/image-1.webp" class="d-block w-100" alt="Image 1">
       <div class="carousel-caption d-none d-md-block">
         <h5>Premier slide</h5>
         <p>Description du premier slide.</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="image2.jpg" class="d-block w-100" alt="Image 2">
+      <img src="/assets/img/image-2.webp" class="d-block w-100" alt="Image 2">
       <div class="carousel-caption d-none d-md-block">
         <h5>Deuxième slide</h5>
         <p>Description du deuxième slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="image3.jpg" class="d-block w-100" alt="Image 3">
+      <img src="/assets/img/image-3.webp" class="d-block w-100" alt="Image 3">
       <div class="carousel-caption d-none d-md-block">
         <h5>Troisième slide</h5>
         <p>Description du troisième slide.</p>
