@@ -36,10 +36,28 @@ h1 {
 
 
 /* Caroussel */
-.carousel-item img {
-    height: 500px; 
-    object-fit: cover; 
+.carousel-container {
+    background-color: #d2b48c; /* Gris foncé */
+    width: 80%; /* Largeur du bloc */
+    max-width: 900px; /* Largeur max */
+    height: 600px; /* Hauteur du bloc */
+    margin: 50px auto; /* Centre horizontalement et espace en haut/bas */
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 20px; /* Espace autour du carrousel */
 }
+
+.carousel {
+    width: 100%; /* Prend toute la largeur du parent */
+}
+
+.carousel-item img {
+    height: 500px; /* Hauteur des images */
+    object-fit: cover; /* Ajuste l’image */
+}
+
 /* articles */
 .articles-content {
     display: grid;
@@ -47,10 +65,6 @@ h1 {
     grid-gap: 20px; /* Espacement entre les cartes */
     padding: 20px; /* Espacement intérieur pour éviter que le contenu touche les bords */
 }
-
-
-
-
 .container {
     display: flex;
     flex-wrap: wrap;
