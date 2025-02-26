@@ -6,6 +6,7 @@
     <h1 class="text-center">Bienvenue sur ce blog</h1>
 </main>
 
+<?php include './components/slides.php'; ?>
 
 
 <?php include './components/footer.php'; ?>
