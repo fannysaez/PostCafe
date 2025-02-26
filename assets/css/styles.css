@@ -31,9 +31,13 @@ h1 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-h5 p {
+h5{
   font-family: "Lora Regular", sans-serif;
   color: white;
+}
+p{
+    font-family: "Lora Regular", sans-serif;
+    color: white;  
 }
 /* Boutons */
 
