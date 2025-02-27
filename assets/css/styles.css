@@ -71,7 +71,9 @@ h1 {
   max-width: 900px;
   padding: 20px;
 }
-
+.custom-gap {
+  gap: 10px; /* Ajustez la valeur selon vos besoins */
+}
 .card {
   width: 18rem;
   background: white;
