@@ -11,7 +11,10 @@
             <a class="nav-link text-white" href="/index.php">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/article.php">Articles</a>
+            <a class="nav-link text-white" href="/article.php">Produits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/archive.php">Archives</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="/article-create.php">Formulaire</a>
