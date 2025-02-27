@@ -1,17 +1,20 @@
-//<?php
-// db/pdo.php
-//$username = "root";
-//$mdp = "";
-//$dbname = "";
-//$dsn = "mysql:dbname=$dbname;host=127.0.0.1;port=8080";
+<?php
+$host = "127.0.0.1";
+$dbname = "blog_postcoffee";
+$port = "3306";
+$charset = "utf8";
 
-//try {
-    //$pdo = new PDO($dsn, $username, $mdp);
-    //$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    //$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$user = "root";
+$password = "";
 
+$dsn = "mysql:host=$host;dbname=$dbname;port=$port;charset=$charset";
 
-//} catch (PDOException $e) {
-    //echo "Connection réussie: " . $e->getMessage();
-//}
-//?>
+try {
+    $pdo = new PDO($dsn, $user, $password);
+    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // echo "Connected successfully";
+
+} catch (PDOException $e) {
+    echo "Connection failed : " . $e->getMessage();
+}

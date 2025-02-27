@@ -10,7 +10,7 @@
         <div class="articles-content">
 
             <?php
-            for ($i = 0; $i < 9; $i++) {
+            for ($i = 0; $i < 3; $i++) {
                 include('./components/card-article.php');
             }
             ?>
