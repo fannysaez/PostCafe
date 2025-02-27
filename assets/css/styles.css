@@ -35,25 +35,25 @@ h1 {
 
 /* Caroussel */
 .carousel-container {
-  background-color: #d2b48c; /* Gris foncé */
-  width: 80%; /* Largeur du bloc */
-  max-width: 900px; /* Largeur max */
-  height: 600px; /* Hauteur du bloc */
-  margin: 50px auto; /* Centre horizontalement et espace en haut/bas */
+  background-color: #d2b48c; 
+  width: 80%; 
+  max-width: 900px;
+  height: 600px; 
+  margin: 50px auto; 
   display: flex;
-  align-items: center; /* Centre verticalement */
-  justify-content: center; /* Centre horizontalement */
-  border-radius: 15px; /* Coins arrondis */
-  padding: 20px; /* Espace autour du carrousel */
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 15px; 
+  padding: 20px; 
 }
 
 .carousel {
-  width: 100%; /* Prend toute la largeur du parent */
+  width: 100%; 
 }
 
 .carousel-item img {
-  height: 500px; /* Hauteur des images */
-  object-fit: cover; /* Ajuste l’image */
+  height: 500px; 
+  object-fit: cover; 
 }
 
 /* articles */
