@@ -1,5 +1,5 @@
 <div class="container-fluid py-5 mb-6">
-    <div class="row justify-content-center gap-1"> <!-- Ajoutez gap-3 pour l'espacement entre les cartes -->
+    <div class="row justify-content-center"> 
         <div class="col-md-6">
             <div class="card">
                 <img src="" class="card-img-top" alt="Article Image">
