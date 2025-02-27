@@ -1,14 +1,10 @@
 <?php
-require_once 'db/pdo.php';
+require_once './db/pdo.php';
 
-/**
- * Permet de récupérer tous les articles de la base de données
- * @return array
- */
 function getArticles()
 {
     global $pdo;
-    $sql = "SELECT * from articles";
+    $sql = "SELECT * FROM articles";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
 
@@ -16,10 +12,10 @@ function getArticles()
     return $articles;
 }
 
-function getArticle(int $id)
+function getArticle($id)
 {
     global $pdo;
-    $sql = "SELECT * from article"; // a faire !!!
+    $sql = "SELECT * FROM articles WHERE id = :id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([
         ':id' => $id

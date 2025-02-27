@@ -15,10 +15,13 @@ $articles = getArticles();
 
 
 <div class="container">
-    <?php foreach ($articles as $article) : ?>
-        <?php include 'components/card-article.php'; ?>
-    <?php endforeach ?>
+    <div class="row">
+        <?php foreach ($articles as $article) : ?>
+            <?php include 'components/card-article.php'; ?>
+        <?php endforeach ?>
+    </div>
 </div>
+
 
 <!-- Liste de cards boostrap par article -->
 

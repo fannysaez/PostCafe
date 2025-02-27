@@ -35,25 +35,25 @@ h1 {
 
 /* Caroussel */
 .carousel-container {
-  background-color: #d2b48c; 
-  width: 80%; 
+  background-color: #d2b48c;
+  width: 80%;
   max-width: 900px;
-  height: 600px; 
-  margin: 50px auto; 
+  height: 600px;
+  margin: 50px auto;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  border-radius: 15px; 
-  padding: 20px; 
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .carousel {
-  width: 100%; 
+  width: 100%;
 }
 
 .carousel-item img {
-  height: 500px; 
-  object-fit: cover; 
+  height: 500px;
+  object-fit: cover;
 }
 
 /* articles */
@@ -63,16 +63,8 @@ h1 {
   grid-gap: 20px; /* Espacement entre les cartes */
   padding: 20px; /* Espacement intérieur pour éviter que le contenu touche les bords */
 }
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px; /* Espacement léger entre les cartes */
-  max-width: 900px;
-  padding: 20px;
-}
+
 .card {
-  width: 18rem;
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
