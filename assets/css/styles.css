@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Lora Regular";
+  src: url(/assets/fonts/Lora/Lora-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url(/assets/fonts/BebasNeue/BEBASNEUE\ BOLD.TTF) format("truetype");
+}
+
+.PostCafe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+html,
+body {
+  height: 100%;
+}
+.main-content {
+  flex: 1;
+}
+body {
+  font-family: "Lora Regular", sans-serif;
+}
+
+h1 {
+  font-family: "BebasNeue Bold", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* Boutons */
+
+/* Caroussel */
+.carousel-container {
+  background-color: #d2b48c; 
+  width: 80%; 
+  max-width: 900px;
+  height: 600px; 
+  margin: 50px auto; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 15px; 
+  padding: 20px; 
+}
+
+.carousel {
+  width: 100%; 
+}
+
+.carousel-item img {
+  height: 500px; 
+  object-fit: cover; 
+}
+
+/* articles */
+.articles-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes de largeur égale */
+  grid-gap: 20px; /* Espacement entre les cartes */
+  padding: 20px; /* Espacement intérieur pour éviter que le contenu touche les bords */
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Espacement léger entre les cartes */
+  max-width: 900px;
+  padding: 20px;
+}
+.card {
+  width: 18rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #212529;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #343a40;
+}
+
+/* navigation */
+.nav ul li {
+  font-family: "Lora Regular", sans-serif;
+  font-weight: 700;
+}
+/* footer */
+.footer {
+  background-color: #6f4e37;
+  color: white;
+  padding: 20px 0;
+}
+.footer p {
+  margin-bottom: 10px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #d2b48c;
+}
