@@ -16,9 +16,7 @@ $articles = getArticles();
 <main class="d-flex flex-column justify-content-center align-items-center">
     <div class="container">
         <div class="row">
-            <?php foreach ($articles as $article) : ?>
                 <?php include 'components/card-article.php'; ?>
-            <?php endforeach ?>
         </div>
     </div>
 </main>

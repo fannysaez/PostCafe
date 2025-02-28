@@ -1,7 +1,7 @@
 <?php
 require_once './db/pdo.php';
 require_once './db/db-categories.php';
-$categories = getCategories();
+$categories = getCategory();
 include 'components/header.php';
 
 ?>

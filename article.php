@@ -12,6 +12,7 @@ include 'components/header.php';
 <main class="container py-lg-4 justify-content-center align-items-center">
     <section class="container mt-5 py-5 mb-3">
         <div class="card mb-3 py-0 mb-3">
+            <span style="background-color: <?php echo $article['category_color']; ?>;" class="badge rounded-pill"><?php echo $article['category_name']; ?></span>
             <h1 class="card-header text-center"><?php echo $article['title']; ?></h1>
 
             <div class="row g-0 py-4 mb-3">

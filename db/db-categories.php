@@ -1,7 +1,8 @@
 <?php
 require_once './db/pdo.php';
 
-function getCategories() {
+function getCategory()
+{
     global $pdo; // toujours présent
     $sql = 'SELECT * FROM categories';
     // $sql = 'SELECT * FROM article';
