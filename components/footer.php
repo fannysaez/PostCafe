@@ -1,5 +1,5 @@
 <!-- page footer -->
-<footer class="mt-auto">
+<footer>
     <div class="footer px-2" style="background-color: #6F4E37; color: white; padding: 20px 0;">
         <div class="container text-center d-flex justify-content-around flex-wrap">
 
