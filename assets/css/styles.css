@@ -75,7 +75,6 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  text-align: center;
 }
 
 .card img {
@@ -114,7 +113,9 @@ h1 {
 .btn:hover {
   background: #343a40;
 }
-
+.text-justify {
+  text-align: justify;
+}
 /* navigation */
 .nav ul li {
   font-family: "Lora Regular", sans-serif;

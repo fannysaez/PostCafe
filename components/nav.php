@@ -11,7 +11,7 @@
             <a class="nav-link text-white" href="/index.php">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/archive.php">Archives</a>
+            <a class="nav-link text-white" href="/archive.php">Articles</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="/article-create.php">Formulaire</a>

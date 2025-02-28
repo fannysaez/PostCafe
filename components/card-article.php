@@ -11,7 +11,7 @@ require_once "db/db-article.php"
             <div>
                 <h5 class="card-title"><?php echo $article['title']; ?></h5>
                 <p class="card-text text-secondary"><?php echo $article['description']; ?></p>
-                <p class="card-description"><?php echo $article['content']; ?></p>
+                <p class="card-description"></p>
                 <p class="card-creator"><?php echo $article['created_at']; ?></p>
             </div>
             <a href="article.php?id=<?php echo $article['id']; ?>" class="border btn btn-dark">Ouvrir l'article</a>
