@@ -24,3 +24,5 @@ function getArticle($id)
     $article = $stmt->fetch();
     return $article;
 }
+
+
