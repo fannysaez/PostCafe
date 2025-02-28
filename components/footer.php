@@ -1,9 +1,9 @@
 <!-- page footer -->
 <footer>
-    <div class="footer px-2" style="background-color: #6F4E37; color: white; padding: 20px 0;">
+    <div class="footer mt-3 py-3" style="background-color: #6F4E37; color: white; padding: 10px 0;">
         <div class="container text-center d-flex justify-content-around flex-wrap">
 
-            <p class="mb-2">
+            <p class="mb-3">
                 <i class="bi bi-geo-alt fs-3" style="color: #D2B48C;"></i><br>
                 123 Rue de l'Océan,<br>75001 Ville Natation
             </p>

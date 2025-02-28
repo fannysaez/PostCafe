@@ -1,5 +1,5 @@
 <header>
-  <nav id="navbar-example2" class="navbar navbar-expand-lg px-2" style="background-color: #6F4E37;">
+  <nav id="navbar-example2" class="navbar navbar-expand-lg py-3" style="background-color: #6F4E37;">
     <div class="container">
       <a class="navbar-brand text-white" href="/index.php"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

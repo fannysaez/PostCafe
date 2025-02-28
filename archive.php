@@ -13,7 +13,7 @@ $articles = getArticles();
 <?php include 'components/header.php'; ?>
 
 
-<main class="d-flex flex-column align-items-center my-5">
+<main class="d-flex flex-column justify-content-center align-items-center">
     <div class="container">
         <div class="row">
             <?php foreach ($articles as $article) : ?>
