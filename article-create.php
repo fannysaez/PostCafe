@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-<main class="container d-flex flex-column align-items-center justify-content-center px-5">
-    <h1> Formulaire création d'un article </h1>
+<main class="container d-flex flex-column align-items-center justify-content-center px-5 mt-5">
+    <h3> Formulaire création d'un article </h3>
     <div class="container">
 
         <form action="" method="POST" class="border p-4 rounded shadow">

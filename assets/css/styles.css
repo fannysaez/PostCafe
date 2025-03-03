@@ -25,7 +25,9 @@ body {
 main {
   flex: 1;
 }
-
+main h3{
+  margin-bottom: 30px;
+}
 body {
   font-family: "Lora Regular", sans-serif;
 }
