@@ -41,3 +41,15 @@ function getArticlesByCategory($category_id)
     $stmt->execute([$category_id]);
     return $stmt->fetchAll();
 }
+
+function addArticle($title, $description, $content, $category_id)
+{
+    global $pdo;
+
+    $sql = "INSERT INTO articles (title, description, content, category_id, created_at) 
+            VALUES (?, ?, ?, ?, NOW())";
+
+    $stmt = $pdo->prepare($sql);
+    return $stmt->execute([$title, $description, $content, $category_id]);
+}
+

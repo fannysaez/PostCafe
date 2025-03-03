@@ -5,9 +5,9 @@ $articles = getArticles();
 ?>
 
 <?php foreach ($articles as $article) : ?>
-    <div class="article-card col-md-6 col-lg-4 px-5 ">
+    <div class="article-card col-md-6 col-lg-4 px-5 mt-5">
         <div class="card">
-            <img src="<?php echo $article['img_cover']; ?>" class="card-img-top" alt="">
+            <img src="<?php echo $article['img_cover'] ?: "../assets/img/image_base.webp" ?>" class="card-img-top" alt="">
             <div class="card-body">
                 <div>
                     <span style="background-color: <?php echo $article['category_color']; ?>;" class="badge rounded-pill"><?php echo $article['category_name']; ?></span>
