@@ -1,6 +1,6 @@
 <?php
 require_once './db/pdo.php';
-
+// Ajouts
 function getArticles()
 {
     global $pdo;
@@ -12,7 +12,7 @@ function getArticles()
 
     return $stmt->fetchAll();
 }
-
+// Ajout
 function getArticle($id)
 {
     global $pdo;
@@ -42,6 +42,7 @@ function getArticlesByCategory($category_id)
     return $stmt->fetchAll();
 }
 
+// Ajout d'un article
 function addArticle($title, $description, $content, $category_id)
 {
     global $pdo;

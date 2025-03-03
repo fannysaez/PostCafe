@@ -18,3 +18,18 @@ function getComments($article_id)
     $stmt->execute([$article_id]);
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
+function addComment($articleId, $username, $content): bool
+{
+    global $pdo;
+    $sql = "INSERT INTO article_comments 
+            (article_id, username, content) 
+            VALUES (:article_id, :username, :content)";
+
+    $stmt = $pdo->prepare($sql);
+    return $stmt->execute([
+        ":username" => ($username),
+        ":content" => ($content),
+        ":article_id" => $articleId,
+    ]);
+}

@@ -1,6 +1,6 @@
 <!-- page footer -->
 <footer>
-    <div class="footer mt-3 py-3" style="background-color: #6F4E37; color: white; padding: 10px 0;">
+    <div class="footer mt-5 py-3" style="background-color: #6F4E37; color: white; padding: 10px 0;">
         <div class="container text-center d-flex justify-content-around flex-wrap">
 
             <p class="mb-3">
