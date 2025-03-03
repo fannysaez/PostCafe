@@ -24,11 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-
-
-
-<?php include 'components/footer.php'; ?>
-
 <main class="container d-flex flex-column align-items-center justify-content-center px-5 mt-5">
     <h3>Bienvenue ici </h3>
     <div class="container">
