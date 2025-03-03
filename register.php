@@ -1,7 +1,33 @@
 <?php
+require_once './db/pdo.php';
 include 'components/header.php';
+
+$message = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $created_at = $_POST['created_at'];
+
+    if (!empty($username) && ($email) && ($password) && $created_at) {
+
+        if (addArticle($username, $email, $password, $created_at)) {
+            $message = "Connexion avec succés";
+        } else {
+            $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
+        }
+    } else {
+        $message = "Tout les champs doivent être remplis.";
+    }
+}
 ?>
 
+
+
+
+
+<?php include 'components/footer.php'; ?>
 
 <main class="container d-flex flex-column align-items-center justify-content-center px-5 mt-5">
     <h3>Bienvenue ici </h3>
@@ -22,7 +48,7 @@ include 'components/header.php';
             </div>
 
 
-            <button type="submit" class="btn btn-dark">Connectez-vous</button>
+            <button type="submit" class="btn btn-dark">Inscrivez-vous</button>
         </form>
     </div>
 </main>

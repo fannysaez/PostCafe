@@ -5,7 +5,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav nav-pills me-auto"> <!-- "me-auto" pousse le bouton à droite -->
           <li class="nav-item">
@@ -19,7 +19,7 @@
           </li>
         </ul>
         <!-- Bouton Connexion aligné à droite -->
-        <a href="/login.php" class="btn btn-light">Connexion</a>
+        <a href="/register.php" class="btn btn-light">Connexion</a>
       </div>
     </div>
   </nav>
