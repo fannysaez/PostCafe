@@ -1,5 +1,6 @@
 <?php
 require_once './db/pdo.php';
+require_once './db/db-user.php';
 include 'components/header.php';
 
 $message = "";
@@ -8,12 +9,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $created_at = $_POST['created_at'];
 
-    if (!empty($username) && ($email) && ($password) && $created_at) {
+    if (!empty($username) && ($email) && ($password)) {
 
-        if (addArticle($username, $email, $password, $created_at)) {
+        if (addUser($username, $email, $password)) {
             $message = "Connexion avec succés";
+            exit;
         } else {
             $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
         }
@@ -42,8 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
 
-
             <button type="submit" class="btn btn-dark">Inscrivez-vous</button>
+            <?php echo $message ?>
         </form>
     </div>
 </main>
