@@ -47,7 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <button type="submit" class="btn btn-dark">Inscrivez-vous</button>
-            <!-- Affichage du message -->
             <?php echo $message; ?>
 
         </form>
