@@ -16,10 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message = "Connexion avec succés";
             exit;
         } else {
-            $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
+            $message = '<div class="alert alert-success">Inscription réussie !</div>';
         }
     } else {
-        $message = "Tout les champs doivent être remplis.";
+        $message = '<div class="alert alert-danger">Veuillez remplir tous les champs.</div>';
     }
 }
 ?>
