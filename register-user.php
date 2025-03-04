@@ -3,22 +3,19 @@ require_once './db/pdo.php';
 require_once './db/db-user.php';
 include 'components/header.php';
 
-$message = ""; // Variable pour stocker le message
+$message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $username = trim($_POST['username']);
+    $email = trim($_POST['email']);
+    $password = trim($_POST['password']);
 
-    // Vérification des champs (ajoute tes propres validations)
+    // Vérifier que tous les champs sont remplis
     if (!empty($username) && !empty($email) && !empty($password)) {
-
-// Ici, ajoute du code pour enregistrer dans la base de données
-       if (addUser($username, $email, $password)) {
-
-         // Affichage d'un message de succès
+        
+        // Ajouter l'utilisateur en base de données
+        if (addUser($username, $email, $password)) {
             $message = '<div class="alert alert-success">Inscription réussie !</div>';
-            exit;
         } else {
             $message = '<div class="alert alert-danger">Erreur lors de l\'inscription. Veuillez réessayer.</div>';
         }
@@ -28,32 +25,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-
 <main class="container d-flex flex-column align-items-center justify-content-center px-5 mt-5">
-    <h3>Bienvenue ici </h3>
+    <h3>Bienvenue ici</h3>
     <div class="container">
-
-        <form action="register-user.php" method="POST" class="border p-4 rounded shadow">
-            <div class="mb-5">
+        <form action="" method="POST" class="border p-4 rounded shadow">
+            <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" class="form-control" id="username" name="username" required>
             </div>
-            <div class="mb-5">
+            <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
-            <div class="mb-5">
+            <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
 
             <button type="submit" class="btn btn-dark">Inscrivez-vous</button>
-            <?php if (!empty($message)) echo $message; ?>
-
         </form>
+
+        <!-- Affichage du message ici -->
+        <?php if (!empty($message)) echo $message; ?>
     </div>
 </main>
-
-
 
 <?php include 'components/footer.php'; ?>
