@@ -13,16 +13,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Vérification des champs (ajoute tes propres validations)
     if (!empty($username) && !empty($email) && !empty($password)) {
 
-// Ici, tu peux ajouter le code pour enregistrer dans la base de données
+// Ici, ajoute du code pour enregistrer dans la base de données
        if (addUser($username, $email, $password)) {
+
          // Affichage d'un message de succès
-            $message = "Connexion avec succés";
+            $message = '<div class="alert alert-success">Inscription réussie !</div>';
             exit;
         } else {
-            $message = '<div class="alert alert-success">Inscription réussie !</div>';
+            $message = '<div class="alert alert-danger">Erreur lors de l\'inscription. Veuillez réessayer.</div>';
         }
     } else {
-        $message = '<div class="alert alert-danger">Veuillez remplir tous les champs.</div>';
+        $message = '<div class="alert alert-warning">Veuillez remplir tous les champs.</div>';
     }
 }
 ?>
