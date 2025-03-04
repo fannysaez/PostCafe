@@ -1,4 +1,3 @@
-
 <?php
 require_once './db/pdo.php';
 require_once './db/db-user.php';
@@ -7,17 +6,21 @@ include 'components/header.php';
 $message = ""; // Variable pour stocker le message
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Exemple de récupération des données du formulaire
-    $nom = $_POST["nom"] ?? '';
-    $email = $_POST["email"] ?? '';
-    $password = $_POST["password"] ?? '';
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
     // Vérification des champs (ajoute tes propres validations)
-    if (!empty($nom) && !empty($email) && !empty($password)) {
-        // Ici, tu peux ajouter le code pour enregistrer dans la base de données
+    if (!empty($username) && !empty($email) && !empty($password)) {
 
-        // Affichage d'un message de succès
-        $message = '<div class="alert alert-success">Inscription réussie !</div>';
+// Ici, tu peux ajouter le code pour enregistrer dans la base de données
+       if (addUser($username, $email, $password)) {
+         // Affichage d'un message de succès
+            $message = "Connexion avec succés";
+            exit;
+        } else {
+            $message = '<div class="alert alert-success">Inscription réussie !</div>';
+        }
     } else {
         $message = '<div class="alert alert-danger">Veuillez remplir tous les champs.</div>';
     }
@@ -29,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h3>Bienvenue ici </h3>
     <div class="container">
 
-        <form action="" method="POST" class="border p-4 rounded shadow">
+        <form action="register-user.php" method="POST" class="border p-4 rounded shadow">
             <div class="mb-5">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" class="form-control" id="username" name="username" required>
@@ -44,14 +47,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <button type="submit" class="btn btn-dark">Inscrivez-vous</button>
+            <!-- Affichage du message -->
+            <?php echo $message; ?>
+
         </form>
     </div>
 </main>
 
-
-    <!-- Affichage du message -->
-    <?php echo $message; ?>
-</div>
 
 
 <?php include 'components/footer.php'; ?>

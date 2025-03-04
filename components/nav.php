@@ -19,7 +19,7 @@
           </li>
         </ul>
         <!-- Bouton Connexion aligné à droite -->
-        <a href="/register-user.php" class="btn btn-light">Connexion</a>
+        <a href="/register.php" class="btn btn-light">Connexion</a>
       </div>
     </div>
   </nav>
