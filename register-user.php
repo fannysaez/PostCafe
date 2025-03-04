@@ -43,10 +43,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <button type="submit" class="btn btn-dark">Inscrivez-vous</button>
+                    <!-- Affichage du message ici -->
+            <?php if (!empty($message)) echo $message; ?>
         </form>
-
-        <!-- Affichage du message ici -->
-        <?php if (!empty($message)) echo $message; ?>
     </div>
 </main>
 
